@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -11,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-    <h1>Hey Hey and <a href="/" className="title">welcome again</a></h1>
+    <h1>Hey Hey and welcome again</h1>
     <br/>
     <p>Ayoub Kassi welcome</p>
     </div>
