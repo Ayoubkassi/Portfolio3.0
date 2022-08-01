@@ -29,7 +29,7 @@ jobs:
         run: npm run lint
       - name: Test the Project
         working-directory: ./front
-        run: npm run cypress:cmd
+        run: npm install cypress --save-dev && npm run cypress:cmd
       - name: Deploy Project Artifacts to Vercel
         working-directory: ./front
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
