@@ -24,7 +24,12 @@ jobs:
       - name: Build Project Artifacts
         working-directory: ./front
         run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Lint the Project
+        working-directory: ./front
+        run: npm run lint
+      - name: Test the Project
+        working-directory: ./front
+        run: npm install cypress --save-dev && npm run cypress:cmd
       - name: Deploy Project Artifacts to Vercel
         working-directory: ./front
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
-
