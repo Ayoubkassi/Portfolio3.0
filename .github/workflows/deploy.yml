@@ -11,6 +11,7 @@ on:
 
 
 jobs:
+
   Deploy-Preview:
     runs-on: ubuntu-latest
     steps:
@@ -27,12 +28,19 @@ jobs:
       - name: Lint the Project
         working-directory: ./front
         run: npm run lint
+      - name: Deploy Project Artifacts to Vercel
+        working-directory: ./front
+        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
+
+  cypress-run:
+    name: Cypress run
+    runs-on: ubuntu-16.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
           build: npm run build
           start: npm run start
           wait-on: http://localhost:3000
-      - name: Deploy Project Artifacts to Vercel
-        working-directory: ./front
-        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
