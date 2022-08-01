@@ -11,8 +11,10 @@
     "cypress:cmd": "cypress run"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.2",
     "next": "12.2.3",
     "next-redux-wrapper": "^7.0.5",
     "react": "18.2.0",

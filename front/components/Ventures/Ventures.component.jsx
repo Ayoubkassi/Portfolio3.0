@@ -3,7 +3,7 @@ import { Main , Title , Item , List , Motivation , Info , Btn} from './Ventures.
 const Ventures = () => {
   return (
     <Main>
-      <Title>Future Ventures (Teach myself in 2021)</Title>
+      <Title>Future Ventures (Teach myself in 2022)</Title>
       <List>
         <Item>Scalable distributed systems (infrastructure, networks, microservices)</Item>
         <Item>Machine Learning/AI</Item>

@@ -16,7 +16,7 @@ export const Nav = styled.div`
   }
 `
 
-export const Logo = styled(Link)`
+export const Logo = styled.a`
   flex-basis : 12vw;
   margin-left : 4vw;
   text-decoration: none;
@@ -46,7 +46,7 @@ export const Right = styled.div`
   flex-basis:20vw;
 `
 
-export const Item = styled(Link)`
+export const Item = styled.a`
   text-decoration : none;
   color : ${({color}) => (color === 'black' ? 'black' : 'white')};
   padding: 11px;
