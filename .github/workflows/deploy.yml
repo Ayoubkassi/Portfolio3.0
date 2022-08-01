@@ -31,19 +31,3 @@ jobs:
       - name: Deploy Project Artifacts to Vercel
         working-directory: ./front
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
-
-
-  cypress-run:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        working-directory: ./front
-        uses: actions/checkout@v2
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
-        working-directory: ./front
-        uses: cypress-io/github-action@v4
-        with:
-          build: npm run build
-          start: npm start
