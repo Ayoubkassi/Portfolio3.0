@@ -3,14 +3,14 @@ import { Nav , Logo , Features , Left , Right , Item } from './Navbar.styles';
 const Navbar = ({background = "transparent", color= "white"}) => {
   return (
     <Nav background={background}>
-      <Logo color={color} href="/">Ayoub Kassi</Logo>
+      <Logo color={color} href="/" crossOrigin="anonymous">Ayoub Kassi</Logo>
       <Features>
         <Left>
-          <Item href="/software" color={color}>Software</Item>
-          <Item href="/gear" color={color}>Gear</Item>
+          <Item href="/software" crossOrigin="anonymous" color={color}>Software</Item>
+          <Item href="/gear" crossOrigin="anonymous" color={color}>Gear</Item>
         </Left>
         <Right>
-          <Item href="/contact" color={color}>Contact</Item>
+          <Item href="/contact" crossOrigin="anonymous" color={color}>Contact</Item>
         </Right>
       </Features>
     </Nav>
