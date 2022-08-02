@@ -8,10 +8,10 @@ const Gear = () => {
   return (
     <Main>
       <Title>My Gear</Title>
-      <Description>Here's a list of camera, computer and electronics equipment used in my day to day work. As an Amazon and Adobe Associate, I earn from qualifying purchases.</Description>
+      <Description>Here is a list of camera, computer and electronics equipment used in my day to day work. As an Amazon and Adobe Associate, I earn from qualifying purchases.</Description>
       <Features>
         { data.gear.map((item)=>(
-            <Feature color="black" item={item} />
+            <Feature color="black" item={item} key={item.title} />
         )) }
       </Features>
     </Main>
