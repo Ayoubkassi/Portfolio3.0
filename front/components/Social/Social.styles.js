@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import Image from 'next/image'
-
+import Image from 'next/image';
 
 export const Item = styled.div`
-  width : ${({ size }) => (size === 'medium' ? '30px' : '50px' )};
-  padding : 5px;
+  width : ${({ size }) => (size === 'medium' ? '40px' : '50px' )};
+  padding : 10px 10px 3px 10px;
   background : white;
   border-radius : 50%;
   margin-right : 14px;
@@ -26,7 +25,7 @@ export const Social = styled.div`
 
 export const StyledImage = styled(Image)`
 @media screen and (max-width : 550px){
-  width : 30px;
-  height : 30px;
+  width : 40px;
+  height : 40px;
 }
 `
