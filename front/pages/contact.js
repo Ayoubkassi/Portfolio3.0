@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar/Navbar.component';
 import Connect from '../components/Connect/Connect.component';
 import Footer from '../components/Footer/Footer.component';
 import ContactForm  from '../components/ContactForm/ContactForm.component';
-import { Main } from './ContactPage.styles';
+import { Main } from '../styles/ContactPage.styles';
 
 const ContactPage = () => {
   return (
