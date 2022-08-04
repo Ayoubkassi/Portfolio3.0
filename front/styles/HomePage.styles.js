@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 import Image from 'next/image'
 
-const back = "back.jpg";
+const back = "back2.jpg";
 
 
 export const Main = styled.div`
