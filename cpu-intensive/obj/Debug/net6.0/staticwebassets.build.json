@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eJ4o/JNvsKlqVDgtV5v0mwanphybgINVNLN5WMpWXro=",
+  "Source": "cpu-intensive",
+  "BasePath": "_content/cpu-intensive",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
